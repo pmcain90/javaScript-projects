@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+    /* padding: 14px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+header section img {
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+nav,
+section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 14px;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.searchBar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid black;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+.searchBar:hover {
+    border-color: grey;
+    background-color: whitesmoke;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: black;
+    flex: 1;
+}
+
+.iconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.iconButton {
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.searchButtonsContainer button {
+    padding: 6px 10px;
+    border-radius: 8px;
+    background-color: lightgray;
+    border: unset;
+    color: black;
+
+}
+
+.searchButtonsContainer button:hover {
+    border: 1px solid grey;
+    cursor: pointer;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border: 1px solid gray;
+    justify-content: space-around;
+    border-top: 1px solid grey;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a {
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: grey;
+}
+
+@media (min-width: 540px) {
+    footer>section {
+        flex-direction: row;
+    }
+}
